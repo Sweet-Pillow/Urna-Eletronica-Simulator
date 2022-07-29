@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Urna Eletronica</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="urna">
         <div class="display">
@@ -14,24 +16,30 @@
         </div>
         <div class="teclado">
             <div class="logo">
+                <img src="./images/brasao.png" alt="Brasao" class="brasao">
                 <h2>Justiça Eleitoral</h2>
             </div>
             <div class="teclas">
-                <button class="bt-numerico">1</button>
-                <button class="bt-numerico">2</button>
-                <button class="bt-numerico">3</button>
-                <button class="bt-numerico">4</button>
-                <button class="bt-numerico">5</button>
-                <button class="bt-numerico">6</button>
-                <button class="bt-numerico">7</button>
-                <button class="bt-numerico">8</button>
-                <button class="bt-numerico">9</button>
-                <button class="bt-numerico">0</button>
-                <button class="acao">BRANCO</button>
-                <button class="acao">CORRIGE</button>
-                <button class="acao">CONFIRMA</button>
+                <div class="bts-numericos">
+                    <button type="button" class="numerico">1</button>
+                    <button type="button" class="numerico">2</button>
+                    <button type="button" class="numerico">3</button>
+                    <button type="button" class="numerico">4</button>
+                    <button type="button" class="numerico">5</button>
+                    <button type="button" class="numerico">6</button>
+                    <button type="button" class="numerico">7</button>
+                    <button type="button" class="numerico">8</button>
+                    <button type="button" class="numerico">9</button>
+                    <button type="button" class="numerico">0</button>
+                </div>
+                <div class="bts-acao">
+                    <button type="button" class="acao" id="bt-branco">BRANCO</button>
+                    <button type="button" class="acao" id="bt-corrige">CORRIGE</button>
+                    <button type="button" class="acao" id="bt-confirma">CONFIRMA</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
