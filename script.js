@@ -10,8 +10,8 @@ imgCandidato.style.marginRight = '2px'
 imgCandidato.style.marginTop = '5px'
 imgCandidato.style.filter = 'grayscale(100%)'
 
-let lula = './images/Lula.png'
-let bolso = './images/Bolsonaro.png'
+let lula = './assets/Lula.png'
+let bolso = './assets/Bolsonaro.png'
 
 function AdicionarNumero(numero) {
     nome.innerText = ''
@@ -54,7 +54,9 @@ function VotoEmBranco() {
 }
 
 function Confirmar() {
+    const sfx = new Audio('./assets/sfx-confirma.mp3')
     if (segundoDigito.innerText !== '' || nome.innerText == 'VOTO EM BRANCO'){
+        sfx.play()
         let display = document.querySelector('.display')
         display.style.display = 'flex'
         display.style.justifyContent = 'center'
