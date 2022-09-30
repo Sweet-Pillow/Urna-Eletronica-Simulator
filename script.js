@@ -14,6 +14,7 @@ let lula = './images/Lula.png'
 let bolso = './images/Bolsonaro.png'
 
 function AdicionarNumero(numero) {
+    nome.innerText = ''
     if (primeiroDigito.innerText === ''){
         primeiroDigito.innerText = numero;
         return console.log(numero);
@@ -44,3 +45,11 @@ function Corrigir(){
     nome.innerText = ''
     foto.removeChild(imgCandidato)
 }
+
+function VotoEmBranco() {
+    primeiroDigito.innerText = ''
+    segundoDigito.innerText = ''
+    nome.innerText = 'VOTO EM BRANCO'
+    foto.removeChild(imgCandidato)
+}
+
