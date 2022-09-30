@@ -53,3 +53,13 @@ function VotoEmBranco() {
     foto.removeChild(imgCandidato)
 }
 
+function Confirmar() {
+    if (segundoDigito.innerText !== '' || nome.innerText == 'VOTO EM BRANCO'){
+        let display = document.querySelector('.display')
+        display.style.display = 'flex'
+        display.style.justifyContent = 'center'
+        display.style.alignItems = 'center'
+        display.innerHTML = 'FIM'
+        display.style.fontSize = '100px'
+    }
+}
