@@ -12,7 +12,23 @@
 <body>
     <div class="urna">
         <div class="display">
+            <div class="meu-voto">
+                <h2>Meu voto para:</h2>
+                <div class="foto-candidato">
 
+                </div>
+            </div>
+            <div class="tipo-de-voto">
+                <h1>Presidente</h1>
+            </div>
+            <div class="entrada-numeros">
+                <h2>Numero: </h2>
+                <div class="numero1 numero"></div>
+                <div class="numero2 numero"></div>
+            </div>
+            <div class="nome-voto">
+                
+            </div>
         </div>
         <div class="teclado">
             <div class="logo">
@@ -21,25 +37,26 @@
             </div>
             <div class="teclas">
                 <div class="bts-numericos">
-                    <button type="button" class="numerico">1</button>
-                    <button type="button" class="numerico">2</button>
-                    <button type="button" class="numerico">3</button>
-                    <button type="button" class="numerico">4</button>
-                    <button type="button" class="numerico">5</button>
-                    <button type="button" class="numerico">6</button>
-                    <button type="button" class="numerico">7</button>
-                    <button type="button" class="numerico">8</button>
-                    <button type="button" class="numerico">9</button>
-                    <button type="button" class="numerico">0</button>
+                    <button type="button" onclick="AdicionarNumero(1)" class="numerico">1</button>
+                    <button type="button" onclick="AdicionarNumero(2)" class="numerico">2</button>
+                    <button type="button" onclick="AdicionarNumero(3)" class="numerico">3</button>
+                    <button type="button" onclick="AdicionarNumero(4)" class="numerico">4</button>
+                    <button type="button" onclick="AdicionarNumero(5)" class="numerico">5</button>
+                    <button type="button" onclick="AdicionarNumero(6)" class="numerico">6</button>
+                    <button type="button" onclick="AdicionarNumero(7)" class="numerico">7</button>
+                    <button type="button" onclick="AdicionarNumero(8)" class="numerico">8</button>
+                    <button type="button" onclick="AdicionarNumero(9)" class="numerico">9</button>
+                    <button type="button" onclick="AdicionarNumero(0)" class="numerico">0</button>
                 </div>
                 <div class="bts-acao">
                     <button type="button" class="acao" id="bt-branco">BRANCO</button>
-                    <button type="button" class="acao" id="bt-corrige">CORRIGE</button>
+                    <button type="button" onClick="Corrigir()" class="acao" id="bt-corrige">CORRIGE</button>
                     <button type="button" class="acao" id="bt-confirma">CONFIRMA</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

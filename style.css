@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
 .urna{
     display: flex;
     justify-content: space-evenly;
@@ -12,6 +17,43 @@
     height: 75%;
     border: 1px solid gray;
     background-color: rgb(196, 196, 196);
+}
+
+.meu-voto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.tipo-de-voto{
+    display: flex;
+    justify-content: center;
+}
+
+.entrada-numeros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 10%;
+    height: 50px;
+    margin-left: 15px;
+    font-size: xx-large;
+}
+
+.nome-voto{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
 
 .teclado{
