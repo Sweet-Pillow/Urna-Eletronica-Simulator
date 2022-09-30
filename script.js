@@ -30,8 +30,10 @@ function AdicionarNumero(numero) {
         return foto.appendChild(imgCandidato)
 
     } else if (primeiroDigito.innerText == 2 && segundoDigito.innerText == 2) {
-        imgCandidato.src = bolso
-        nome.innerText = 'BOLSONARO'
+        imgCandidato.src = lula
+        nome.innerText = 'LULA'
+        primeiroDigito.innerText = 1
+        segundoDigito.innerText = 3
         return foto.appendChild(imgCandidato)
     }
 
