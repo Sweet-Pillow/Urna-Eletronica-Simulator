@@ -1,3 +1,9 @@
+@media (orientation: portrait){
+    body{
+        transform: rotate(90deg);
+    }
+}
+
 body{
     display: flex;
     justify-content: center;
